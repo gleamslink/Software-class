@@ -149,7 +149,8 @@ function FollowedList_Putin(){
                             }
                         }
                     }
-                    if(User_Info[User_ID].Accu_Credit + Followed_List[j].Credit > 25){
+                    if((User_Info[User_ID].Accu_Credit + Followed_List[j].Credit) > 25){
+                        console.log(typeof(User_Info[User_ID].Accu_Credit + Followed_List[j].Credit));
                         credit_count = false;
                     }
                     if(!conlict_status && !credit_count){

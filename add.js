@@ -13,7 +13,7 @@ function save_Data(){
     localStorage.setItem("Choosed_List_key", JSON.stringify(Choosed_List));
     localStorage.setItem("Program_key", JSON.stringify(All_List));
 }
-var id = JSON.parse(localStorage.getItem('id')) || 1000;
+var id = JSON.parse(localStorage.getItem('id')) || 2000;
 
 function check_ID(id) {
     get_Data();
@@ -152,7 +152,7 @@ function getCountry() {
                 Opened_Class: [class_name],
                 day: [day],
                 Teacher: [teacher_name],
-                Credit: [Credit],
+                Credit: parseInt([Credit]),
                 Time: [],
                 Abo: [abo]
             }
@@ -184,7 +184,7 @@ function getCountry() {
                     Opened_Class: [class_name],
                     day: [day],
                     Teacher: [teacher_name],
-                    Credit: [Credit],
+                    Credit: parseInt([Credit]),
                     Time: [],
                     Abo: [abo]
                 }
