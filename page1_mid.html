@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chatset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>增加課程頁面</title>
+</head>
+<body>
+    <div id="course">
+        <h1>逢甲大學選課系統</h1>
+        <a href="login.html"><button>登出</button></a>
+        <form name="form_name" id="form_name">
+            <h2>增加課程</h2>
+            <script src="add.js"></script>
+            <div>
+                <h3>課程名稱</h3>
+                <input type=" text" id="course_name" name="course_name" />課程名稱
+            </div>
+            <div>
+                <h3>開課班級</h3>
+                <input type=" text" id="class_name" name="class_name" />開課班級
+            </div>
+            <div>
+                <h3>課程時間</h3>
+                <select id="day" name="day">
+                    <option value="0">禮拜幾</option>
+                    <option value="1">周一</option>
+                    <option value="2">週二</option>
+                    <option value="3">週三</option>
+                    <option value="4">週四</option>
+                    <option value="5">週五</option>
+                </select>
+                <br />
+                <br />
+                <select id="str_time">
+                    <option value="0">上課開始時間</option>
+                    <option value="1">8:10</option>
+                    <option value="2">9:10</option>
+                    <option value="3">10:10</option>
+                    <option value="4">11:10</option>
+                    <option value="5">12:10</option>
+                    <option value="6">13:10</option>
+                    <option value="7">14:10</option>
+                    <option value="8">15:10</option>
+                    <option value="9">16:10</option>
+                    <option value="10">17:10</option>
+                    <option value="11">18:30</option>
+                    <option value="12">19:25</option>
+                    <option value="13">20:25</option>
+                    <option value="14">21:20</option>
+                </select>
+                <br />
+                <br />
+                <select id="end_time">
+                    <option value="0">上課結束時間</option>
+                    <option value="1">9:00</option>
+                    <option value="2">10:00</option>
+                    <option value="3">11:00</option>
+                    <option value="4">12:00</option>
+                    <option value="5">13:00</option>
+                    <option value="6">14:00</option>
+                    <option value="7">15:00</option>
+                    <option value="8">16:00</option>
+                    <option value="9">17:00</option>
+                    <option value="10">18:00</option>
+                    <option value="11">19:25</option>
+                    <option value="12">20:25</option>
+                    <option value="13">21:20</option>
+                    <option value="14">22:10</option>
+                </select>
+                <br />
+            </div>
+            <div>
+                <h3>課程時間(選填)</h3>
+                <select id="day2" name="day2">
+                    <option value="0">禮拜幾</option>
+                    <option value="1">周一</option>
+                    <option value="2">週二</option>
+                    <option value="3">週三</option>
+                    <option value="4">週四</option>
+                    <option value="5">週五</option>
+                </select>
+                <br />
+                <br />
+                <select id="str_time2">
+                    <option value="0">上課開始時間</option>
+                    <option value="1">8:10</option>
+                    <option value="2">9:10</option>
+                    <option value="3">10:10</option>
+                    <option value="4">11:10</option>
+                    <option value="5">12:10</option>
+                    <option value="6">13:10</option>
+                    <option value="7">14:10</option>
+                    <option value="8">15:10</option>
+                    <option value="9">16:10</option>
+                    <option value="10">17:10</option>
+                    <option value="11">18:30</option>
+                    <option value="12">19:25</option>
+                    <option value="13">20:25</option>
+                    <option value="14">21:20</option>
+                </select>
+                <br />
+                <br />
+                <select id="end_time2">
+                    <option value="0">上課結束時間</option>
+                    <option value="1">9:00</option>
+                    <option value="2">10:00</option>
+                    <option value="3">11:00</option>
+                    <option value="4">12:00</option>
+                    <option value="5">13:00</option>
+                    <option value="6">14:00</option>
+                    <option value="7">15:00</option>
+                    <option value="8">16:00</option>
+                    <option value="9">17:00</option>
+                    <option value="10">18:00</option>
+                    <option value="11">19:25</option>
+                    <option value="12">20:25</option>
+                    <option value="13">21:20</option>
+                    <option value="14">22:10</option>
+                </select>
+                <br />
+            </div>
+    </div>
+    <div>
+        <h3>教師姓名</h3>
+        <input type=" text" id="teacher_name" name="teacher_name"/>
+    </div>
+    <div>
+        <h3>課程學分</h3>
+        <select id="cridit" name="cridit">
+            <option value="-1">幾學分</option>
+            <option value="0">0學分</option>
+            <option value="1">1學分</option>
+            <option value="2">2學分</option>
+            <option value="3">3學分</option>
+            <option value="4">4學分</option>
+            <option value="5">5學分</option>
+        </select>
+        <br />
+    </div>
+    <div>
+        <h3>課程敘述</h3>
+        <textarea id="abo" cols="90" rows="10" maxlength="5000"></textarea>
+    </div>
+    <button id="send_btn" onclick="getCountry()">送出</button>
+    </form>
+    
+    </div>
+</body>

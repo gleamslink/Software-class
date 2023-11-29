@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>逢甲大學選課系統</title>
+    </head>
+    <body>
+        <div class="system_name" ></div>
+        <h1>逢甲選課系統</h1>
+            <h3>登入 Login</h3>
+            <div id="login">
+                <script src="Data.js"></script>
+                <script>
+                    const hasRUN = localStorage.getItem("hasRUN");
+                    if(!hasRUN){
+                        initial_Data();
+                        localStorage.setItem("hasRUN", true);
+                    }
+                </script>
+                <script src ="SC2.js"></script>
+                <input type="text" id="username" name="username" placeholder="帳號" required>
+                <div class="tab"></div>
+                <input type="password" id="password" name="password" placeholder="密碼" required>
+                <div class="tab"></div>
+                <input type="submit" value="登入" class="submit" onclick="Verification()">
+                <input type="submit" value="教師登入" class="submit" onclick="Teacher_Verification()">
+                <div class="tab"></div>
+                <textarea>帳D1000000 密a1234567</textarea>
+            </div>
+    </body>
+</html>

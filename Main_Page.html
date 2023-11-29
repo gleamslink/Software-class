@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>逢甲大學選課系統</title>
+        <script src ="Data.js"></script>
+        <script>
+            const hasRUN = localStorage.getItem("hasRUN");
+            if(!hasRUN){
+                initial_Data();
+                localStorage.setItem("hasRUN", true);
+            }
+        </script>
+        <style>
+            .RIGHT {
+                width: 50%;
+                position: absolute;
+                left: 45%;
+                top:10%;
+                border: solid 1px;
+            }
+            .LEFT{
+                width: 50%;
+            }
+            .buttonspot{
+                position: absolute;
+                top: 20%;
+                right: 25%;
+            }
+            .info {
+                width: 30%;
+                position:relative;
+                margin-top: 10px;
+                padding: 10px;
+                border: solid 1px;
+            }
+            .Searchbar{
+                margin: 5%;
+            }
+        </style>        
+    </head>
+    <body>
+        <h1>逢甲大學選課系統</h1>
+        <button>主頁面</button>
+        <a href="index.html"><button>關注列表</button></a>
+        <a href="login.html"><button>登出</button></a>
+        <div class="info">
+            <script src ="SC2.js"></script>
+            <script>Write_Info();</script>
+            <!-- <span>學生姓名:<br></span>
+            <span>學號:<br></span>
+            <span>學分下限:<br></span>
+            <span>登入時間:<br></span> -->
+        </div>
+        </body>
+        <div class="LEFT">
+            
+            <table border="1"style="border:1px solid black;">
+                <tr>
+                    <td></td>
+                    <td>星期一</td>
+                    <td>星期二</td>
+                    <td>星期三</td>
+                    <td>星期四</td>
+                    <td>星期五</td>
+                </tr>
+                <tr>
+                    <td>08:10-09:00</td>
+                    <script src = "show.js"></script>
+                    <td><a href="show.html" onclick="functionToExecute('1')"><script>Course_Putin(1)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('15')"><script>Course_Putin(15)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('29')"><script>Course_Putin(29)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('43')"><script>Course_Putin(43)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('57')"><script>Course_Putin(57)</script></a></td>
+                </tr>
+                <tr>
+                    <td>09:10-10:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('2')"><script>Course_Putin(2)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('16')"><script>Course_Putin(16)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('30')"><script>Course_Putin(30)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('44')"><script>Course_Putin(44)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('58')"><script>Course_Putin(58)</script></a></td>
+                </tr>
+                <tr>
+                    <td>10:10-11:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('3')"><script>Course_Putin(3)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('17')"><script>Course_Putin(17)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('31')"><script>Course_Putin(31)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('45')"><script>Course_Putin(45)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('59')"><script>Course_Putin(59)</script></a></td>
+                </tr>
+                <tr>
+                    <td>11:10-12:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('4')"><script>Course_Putin(4)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('18')"><script>Course_Putin(18)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('32')"><script>Course_Putin(32)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('46')"><script>Course_Putin(46)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('60')"><script>Course_Putin(60)</script></a></td>
+                </tr>
+                <tr>
+                    <td>12:10-13:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('5')"><script>Course_Putin(5)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('19')"><script>Course_Putin(19)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('33')"><script>Course_Putin(33)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('47')"><script>Course_Putin(47)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('61')"><script>Course_Putin(61)</script></a></td>
+                </tr>
+                <tr>
+                    <td>13:10-14:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('6')"><script>Course_Putin(6)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('20')"><script>Course_Putin(20)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('34')"><script>Course_Putin(34)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('48')"><script>Course_Putin(48)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('62')"><script>Course_Putin(62)</script></a></td>
+                </tr>
+                <tr>
+                    <td>14:10-15:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('7')"><script>Course_Putin(7)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('21')"><script>Course_Putin(21)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('35')"><script>Course_Putin(35)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('49')"><script>Course_Putin(49)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('63')"><script>Course_Putin(63)</script></a></td>
+                </tr>
+                <tr>
+                    <td>15:10-16:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('8')"><script>Course_Putin(8)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('21')"><script>Course_Putin(21)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('36')"><script>Course_Putin(36)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('50')"><script>Course_Putin(50)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('64')"><script>Course_Putin(64)</script></a></td>
+                </tr>
+                <tr>
+                    <td>16:10-17:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('9')"><script>Course_Putin(9)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('22')"><script>Course_Putin(22)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('37')"><script>Course_Putin(37)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('51')"><script>Course_Putin(51)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('65')"><script>Course_Putin(65)</script></a></td>
+                </tr>
+                <tr>
+                    <td>17:10-18:00</td>
+                    <td><a href="show.html" onclick="functionToExecute('10')"><script>Course_Putin(10)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('24')"><script>Course_Putin(24)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('38')"><script>Course_Putin(38)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('52')"><script>Course_Putin(52)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('66')"><script>Course_Putin(66)</script></a></td>
+                </tr>
+                <tr>
+                    <td>18:30-19:20</td>
+                    <td><a href="show.html" onclick="functionToExecute('11')"><script>Course_Putin(11)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('25')"><script>Course_Putin(25)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('39')"><script>Course_Putin(39)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('53')"><script>Course_Putin(53)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('67')"><script>Course_Putin(67)</script></a></td>
+                </tr>
+                <tr>
+                    <td>19:25-20:15</td>
+                    <td><a href="show.html" onclick="functionToExecute('12')"><script>Course_Putin(12)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('26')"><script>Course_Putin(26)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('40')"><script>Course_Putin(40)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('54')"><script>Course_Putin(54)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('68')"><script>Course_Putin(68)</script></a></td>
+                </tr>
+                <tr>
+                    <td>20:25-21:15</td>
+                    <td><a href="show.html" onclick="functionToExecute('13')"><script>Course_Putin(13)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('27')"><script>Course_Putin(27)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('41')"><script>Course_Putin(41)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('55')"><script>Course_Putin(55)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('69')"><script>Course_Putin(69)</script></a></td>
+                </tr>
+                <tr>
+                    <td>21:20-22:10</td>
+                    <td><a href="show.html" onclick="functionToExecute('14')"><script>Course_Putin(14)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('28')"><script>Course_Putin(28)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('42')"><script>Course_Putin(42)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('56')"><script>Course_Putin(56)</script></a></td>
+                    <td><a href="show.html" onclick="functionToExecute('70')"><script>Course_Putin(70)</script></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class = "RIGHT" >
+            <div class="Searchbar">
+                <input id ="testInput"  type = "number"  placeholder="請輸入課程代碼"/>
+                <button class="submitBtn">搜尋</button>
+                <script src = "Main.js"></script>
+                <script >FsubmitBtn()</script>
+            </div>  
+            <script >show1()</script>
+            <p id="content1">
+                <script >show2()</script>   
+            <p>
+            <p id="content2" style="display: none;" >
+                <script >show3()</script>   
+            <p>
+            <p id="content3" style="display: none;" >
+                <script >show4()</script>   
+            <p>
+            <p id="result" style="display: inline;"></p>
+            <button id = "but" style="visibility: hidden;" onclick="button_press()">關注</button>
+        </div>
+        <div class="buttonspot">
+            <button id = "b1" style = "margin-right: 20px;" onclick="button_press1()">1</button>
+            <button id = "b2" style = "margin-right: 20px;" onclick="button_press2()">2</button>
+            <button id = "b3" onclick="button_press3()">3</button>
+        </div>
+    </body>
+</html>
